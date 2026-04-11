@@ -19,7 +19,7 @@ func Main() {
 	} else if temp > 0 && temp <= 20 {
 		fmt.Println("Прохладно")
 	} else {
-		fmt.Println("Тело")
+		fmt.Println("Тепло")
 	}
 
 	//задача 3

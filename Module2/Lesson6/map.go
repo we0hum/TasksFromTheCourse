@@ -203,8 +203,8 @@ func Main() {
 		"apple":  &prc,
 		"orange": &prc1,
 	}
-	if productName, ok := goods["orange"]; ok {
-		applyDiscount(productName, 20)
+	if productPrice, ok := goods["orange"]; ok {
+		applyDiscount(productPrice, 20)
 	}
 	for productName, price := range goods {
 		fmt.Printf("%s - %d\n", productName, *price)
