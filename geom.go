@@ -3,6 +3,7 @@ package TasksFromTheCourse
 import (
 	"fmt"
 	"math"
+	"reflect"
 )
 
 type Shape interface {
@@ -14,13 +15,10 @@ type Circle struct {
 	Radius float64
 }
 type Rectangle struct {
-	Width  float64
-	Height float64
+	Width, Height float64
 }
 type Triangle struct {
-	A float64
-	B float64
-	C float64
+	A, B, C float64
 }
 type Square struct {
 	Side float64
@@ -43,9 +41,8 @@ func (r *Rectangle) Perimeter() float64 {
 }
 
 func (t *Triangle) Area() float64 {
-	p := (t.A + t.B + t.C) / 2
-	s := math.Sqrt(p * (p - t.A) * (p - t.B) * (p - t.C))
-	return s
+	p := t.Perimeter() / 2
+	return math.Sqrt(p * (p - t.A) * (p - t.B) * (p - t.C))
 }
 
 func (t *Triangle) Perimeter() float64 {
@@ -61,7 +58,8 @@ func (s *Square) Perimeter() float64 {
 }
 
 func PrintShapeInfo(s Shape) {
-	fmt.Println("")
+	shapeType := reflect.TypeOf(s).Name()
+	fmt.Printf("=== %s ===\n", shapeType)
 	fmt.Printf("Площадь: %.2f\n", s.Area())
-	fmt.Printf("Периметр: %.2f\n", s.Perimeter())
+	fmt.Printf("Периметр: %.2f\n\n", s.Perimeter())
 }
