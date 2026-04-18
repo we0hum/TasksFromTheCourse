@@ -1,14 +1,17 @@
 package main
 
 import (
-	"TasksFromTheCourse/Module5/Lesson3"
 	"fmt"
+
+	"github.com/we0hum/TasksFromTheCourse/Module5/Lesson1"
+	"github.com/we0hum/TasksFromTheCourse/Module5/Lesson2"
+	"github.com/we0hum/TasksFromTheCourse/Module5/Lesson3"
 )
 
 func main() {
-	//Lesson1.Main()
+	Lesson1.Main()
 	fmt.Println("----------------------")
-	//Lesson2.Main()
+	Lesson2.Main()
 	fmt.Println("----------------------")
 	Lesson3.Main()
 }

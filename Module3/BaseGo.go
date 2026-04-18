@@ -1,9 +1,10 @@
 package main
 
 import (
-	"TasksFromTheCourse/Module3/Lesson1"
-	"TasksFromTheCourse/Module3/Lesson2"
 	"fmt"
+
+	"github.com/we0hum/TasksFromTheCourse/Module3/Lesson1"
+	"github.com/we0hum/TasksFromTheCourse/Module3/Lesson2"
 )
 
 func main() {

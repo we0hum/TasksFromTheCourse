@@ -1,12 +1,13 @@
 package main
 
 import (
-	"TasksFromTheCourse/Module2/Lesson1"
-	"TasksFromTheCourse/Module2/Lesson2"
-	"TasksFromTheCourse/Module2/Lesson34"
-	"TasksFromTheCourse/Module2/Lesson5"
-	"TasksFromTheCourse/Module2/Lesson6"
 	"fmt"
+
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson1"
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson2"
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson34"
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson5"
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson6"
 )
 
 func main() {

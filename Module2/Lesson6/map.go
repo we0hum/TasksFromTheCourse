@@ -1,11 +1,12 @@
 package Lesson6
 
 import (
-	"TasksFromTheCourse/Module2/Lesson5"
 	"fmt"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/we0hum/TasksFromTheCourse/Module2/Lesson5"
 )
 
 func Main() {
